@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='pages.css') }}">
+    <title>Python-renderad</title>
+</head>
+<body>
+  <div id="mainPage">
+    <header>
+      <h1>Datacentralen</h1>
+      <h3>Städer (Python/requests)</h3>
+    </header>
+
+    <div id="contentIndex">
+      <ol>
+        {% for city in cities %}
+        <li>{{ city.name }} - {{ city.country }} ({{ "{:,}".format(city.population).replace(",", " ") }} invånare)</li>
+        {% endfor %}
+      </ol>
+      <p><a href="/">Tillbaka</a></p>
+    </div>
+    
+    <footer>
+      <address>&copy; Skapades i april 2025 av gymnasieingenjören Jack Gustafsson </address>
+    </footer>
+    
+  </div>  
+</body>
+</html>

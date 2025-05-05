@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+    <title>Main Page</title>
+</head>
+<body>
+    <div id="mainPage">
+        <header>
+            <h1>Datacentralen</h1>
+            <p>Denna webbsida demonstrerar hur man kan hämta och visa data från ett API med tre olika tekniker: 
+                Python (via <code>requests</code>), JavaScript <code>fetch()</code> och <code>axios</code>. 
+                Syftet är att jämföra hur dessa metoder fungerar i praktiken - både i hur de implementeras och i hur snabbt de levererar data. 
+                Varje metod har inbyggd prestandamätning så du kan se hur lång tid det faktiskt tar att hämta informationen. 
+                I det här fallet är det städer som kommer vara själva datan.</p>
+        </header>
+    
+        <div id="contentIndex">
+            <ul id="list">
+                <li><a href="/python">Python (requests)</a>
+                    <p>requests är ett Python-bibliotek för att skicka HTTP-förfrågningar. Det används oftast på serversidan för att hämta data från API:er</p></li>
+                <li><a href="/fetch">JavaScript (fetch)</a>
+                    <p>fetch är en inbyggd webbläsar-API som används för att hämta data från servrar i JavaScript.</p></li>
+                <li><a href="/axios">JavaScript (axios)</a>
+                    <p>axios är ett externt JavaScript-bibliotek som gör det ännu enklare och kraftfullare att göra HTTP-anrop än med fetch.</p></li>
+            </ul>
+        </div>
+    
+        <footer>
+            <address>&copy; Skapades i april 2025 av gymnasieingenjören Jack Gustafsson </address>
+        </footer>
+    </div>
+    
+</body>
+</html>

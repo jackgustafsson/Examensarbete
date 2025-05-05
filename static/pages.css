@@ -1,0 +1,66 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+ }
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1.4rem; 
+    background-color: grey;
+}
+
+div#mainPage{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    margin-top: 2rem;
+}
+
+header h1{
+    text-align: center;
+    font-size: 4.5rem;
+    padding: 1rem;
+}
+
+header h3 {
+    text-align: center;
+    padding: 1rem;
+}
+
+div#contentIndex ol{
+    width: 41%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div#contentIndex p {
+    width: 10rem;
+    height: 10rem;
+    line-height: 10rem; /* Vertikal centrering via line-height */
+    text-align: center;
+    margin: 3rem auto; /* Centrerar boxen horisontellt */
+    border: solid black 1px;
+    border-radius: 50%;
+    background-color: #ffea00; /* valfritt för bättre kontrast */
+}
+
+div#contentIndex p a {
+    text-decoration: none;
+}
+
+div#contentIndex p a:hover {
+    text-decoration: underline;
+}
+
+
+footer address{
+    text-align: center;
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+}

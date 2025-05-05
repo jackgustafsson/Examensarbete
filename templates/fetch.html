@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <title>Fetch-renderad</title>
+  <script defer src="{{ url_for('static', filename='script.js') }}"></script>
+  <link rel="stylesheet" href="{{ url_for('static', filename='pages.css') }}">
+</head>
+<body>
+  <div id="mainPage">
+    <header>
+      <h1>Datacentralen</h1>
+      <h3>Städer (JavaScript fetch)</h3>
+    </header>
+
+    <div id="contentIndex">
+      <ol id="fetch-lista">Laddar...</ol>
+      <p><a href="/">Tillbaka</a></p>
+    </div>
+
+    <footer>
+      <address>&copy; Skapades i april 2025 av gymnasieingenjören Jack Gustafsson </address>
+    </footer>
+  </div>
+
+</body>
+</html>
