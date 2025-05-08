@@ -1,3 +1,4 @@
+# Skapar en lista med information om svenska städer
 cities = [
     {"name": "Stockholm", "country": "Sverige", "population": 975904},
     {"name": "Göteborg", "country": "Sverige", "population": 583056},

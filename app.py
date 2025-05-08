@@ -29,6 +29,7 @@ def show_fetch():
 def show_axios():
     return render_template('axios.html')
 
+# API-endpoint för att returnera stadens data som JSON
 @app.route('/api/cities')
 def api_stader():
     return jsonify(cities)
